@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react'
+import { IconType } from 'react-icons'
 
 type Props = {
 	href: string
 	label: string
-	icon: ReactNode
+	icon: IconType
 }
 
 const SideBarItem = ({ href, label, icon }: Props) => {
