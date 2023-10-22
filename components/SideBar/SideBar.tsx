@@ -26,6 +26,16 @@ const SideBar = (props: Props) => {
 	return (
 		<section className='h-full w-[25vw] border-r border-white dark:border-zinc-800'>
 			<SideBarLogo />
+			{items.map((item) => {
+				return (
+					<SideBarItem
+						key={item.href}
+						href={item.href}
+						label={item.label}
+						icon={item.icon}
+					/>
+				)
+			})}
 		</section>
 	)
 }
