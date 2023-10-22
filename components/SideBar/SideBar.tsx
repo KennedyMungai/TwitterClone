@@ -1,5 +1,6 @@
 import { BsBellFill, BsHouseFill } from 'react-icons/bs'
 import { FaUser } from 'react-icons/fa'
+import SideBarLogo from './SideBarLogo'
 
 type Props = {}
 
@@ -24,7 +25,7 @@ const SideBar = (props: Props) => {
 
 	return (
 		<section className='h-full w-[25vw] border-r border-white dark:border-zinc-800'>
-			SideBar
+			<SideBarLogo />
 		</section>
 	)
 }
