@@ -1,7 +1,7 @@
 import { BsBellFill, BsHouseFill } from 'react-icons/bs'
 import { FaUser } from 'react-icons/fa'
-import SideBarLogo from './SideBarLogo'
 import SideBarItem from './SideBarItem'
+import SideBarLogo from './SideBarLogo'
 
 type Props = {}
 
@@ -10,30 +10,30 @@ const SideBar = (props: Props) => {
 		{
 			label: 'Home',
 			href: '/',
-			icon: <BsHouseFill />
+			icon: BsHouseFill
 		},
 		{
 			label: 'Notifications',
 			href: '/notifications',
-			icon: <BsBellFill />
+			icon: BsBellFill
 		},
 		{
 			label: 'Profile',
 			href: '/users/123',
-			icon: <FaUser />
+			icon: FaUser
 		}
 	]
 
 	return (
 		<section className='h-full w-[25vw] border-r border-white dark:border-zinc-800'>
 			<SideBarLogo />
-			{items.map((item) => {
+			{items.map(({ href, label, icon }) => {
 				return (
 					<SideBarItem
-						key={item.href}
-						href={item.href}
-						label={item.label}
-						icon={item.icon}
+						key={href}
+						href={href}
+						label={label}
+						icon={icon}
 					/>
 				)
 			})}
