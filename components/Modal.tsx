@@ -47,7 +47,9 @@ const Modal = ({
 					{/* TODO: Add Content */}
 					<div className='h-full border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none lg:w-auto focus:outline-none'>
 						{/* TODO: Add Header */}
-						<div className='flex items-center justify-between p-10 rounded-t'></div>
+						<div className='flex items-center justify-between p-10 rounded-t'>
+							<h3>{title}</h3>
+						</div>
 					</div>
 				</div>
 			</div>
