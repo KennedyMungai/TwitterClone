@@ -1,4 +1,5 @@
 import { ReactElement, useCallback } from 'react'
+import { AiOutlineClose } from 'react-icons/ai'
 
 type Props = {
 	isOpen: boolean
@@ -51,6 +52,9 @@ const Modal = ({
 							<h3 className='uppercase text-white text-3xl text-center'>
 								{title}
 							</h3>
+							<button>
+								<AiOutlineClose />
+							</button>
 						</div>
 					</div>
 				</div>
