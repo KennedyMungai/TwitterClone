@@ -1,4 +1,4 @@
-import { ReactElement } from 'react'
+import { ReactElement, useCallback } from 'react'
 
 type Props = {
 	isOpen: boolean
@@ -21,6 +21,14 @@ const Modal = ({
 	actionLabel,
 	disabled
 }: Props) => {
+	const handleClose = useCallback(() => {
+		if (disabled) {
+			return
+		}
+
+		onClose()
+	}, [disabled, onClose])
+
 	return <div>Modal</div>
 }
 
