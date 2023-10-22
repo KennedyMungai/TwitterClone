@@ -1,9 +1,13 @@
-import React from 'react'
+import Header from './Header'
 
 type Props = {}
 
 const MainContent = (props: Props) => {
-	return <section className='h-full w-[50vw]'>MainContext</section>
+	return (
+		<>
+			<Header label={'Home'} />
+		</>
+	)
 }
 
 export default MainContent
