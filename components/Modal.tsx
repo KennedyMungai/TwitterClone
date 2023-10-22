@@ -40,7 +40,13 @@ const Modal = ({
 		return null
 	}
 
-	return <div>Modal</div>
+	return (
+		<>
+			<div className='justify-center items-center flex overflow-x-hidden overflow-y-hidden fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-800 bg-opacity-70'>
+				Modal
+			</div>
+		</>
+	)
 }
 
 export default Modal
