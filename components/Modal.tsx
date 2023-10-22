@@ -1,6 +1,26 @@
-type Props = {}
+import { ReactElement } from 'react'
 
-const Modal = (props: Props) => {
+type Props = {
+	isOpen: boolean
+	onClose: () => void
+	onSubmit: () => void
+	title?: string
+	body?: ReactElement
+	footer?: ReactElement
+	actionLabel: string
+	disabled?: boolean
+}
+
+const Modal = ({
+	isOpen,
+	onClose,
+	onSubmit,
+	title,
+	body,
+	footer,
+	actionLabel,
+	disabled
+}: Props) => {
 	return <div>Modal</div>
 }
 
