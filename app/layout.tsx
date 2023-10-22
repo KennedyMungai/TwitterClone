@@ -17,10 +17,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={open_sans.className}>
-				<NavBar />
-				{children}
-			</body>
+			<body className={open_sans.className}>{children}</body>
 		</html>
 	)
 }
