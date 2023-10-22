@@ -53,7 +53,7 @@ const Modal = ({
 								{title}
 							</h3>
 							<button>
-								<AiOutlineClose />
+								<AiOutlineClose size={20} />
 							</button>
 						</div>
 					</div>
