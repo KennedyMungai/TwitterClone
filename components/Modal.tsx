@@ -29,6 +29,13 @@ const Modal = ({
 		onClose()
 	}, [disabled, onClose])
 
+	const handleSubmit = useCallback(() => {
+		if (disabled) {
+			return
+		}
+		onSubmit()
+	}, [disabled, onSubmit])
+
 	return <div>Modal</div>
 }
 
