@@ -1,0 +1,13 @@
+import React from 'react'
+
+type Props = {}
+
+const SideBar = (props: Props) => {
+	return (
+		<section className='h-[90vh] w-[30vh] border-r border-white dark:border-zinc-800'>
+			SideBar
+		</section>
+	)
+}
+
+export default SideBar
