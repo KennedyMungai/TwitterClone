@@ -36,6 +36,10 @@ const Modal = ({
 		onSubmit()
 	}, [disabled, onSubmit])
 
+	if (!isOpen) {
+		return null
+	}
+
 	return <div>Modal</div>
 }
 
