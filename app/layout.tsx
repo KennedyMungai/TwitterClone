@@ -17,16 +17,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<Modal
-				isOpen
-				onClose={function (): void {
-					throw new Error('Function not implemented.')
-				}}
-				onSubmit={function (): void {
-					throw new Error('Function not implemented.')
-				}}
-				actionLabel={''}
-			/>
 			<body className={open_sans.className}>{children}</body>
 		</html>
 	)
