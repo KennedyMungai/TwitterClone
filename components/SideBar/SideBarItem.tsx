@@ -4,9 +4,10 @@ type Props = {
 	href: string
 	label: string
 	icon: IconType
+	onClick?: () => void
 }
 
-const SideBarItem = ({ href, label, icon }: Props) => {
+const SideBarItem = ({ href, label, icon, onClick }: Props) => {
 	return <div>SideBarItem</div>
 }
 
