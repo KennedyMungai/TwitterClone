@@ -1,6 +1,7 @@
 import { BsBellFill, BsHouseFill } from 'react-icons/bs'
 import { FaUser } from 'react-icons/fa'
 import SideBarLogo from './SideBarLogo'
+import SideBarItem from './SideBarItem'
 
 type Props = {}
 
