@@ -9,12 +9,8 @@ export default function Home() {
 			<Modal
 				isOpen
 				title={'Test'}
-				onClose={function (): void {
-					throw new Error('Function not implemented.')
-				}}
-				onSubmit={function (): void {
-					throw new Error('Function not implemented.')
-				}}
+				onClose={() => {}}
+				onSubmit={() => {}}
 				actionLabel={''}
 			/>
 			<SideBar />
