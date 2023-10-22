@@ -52,7 +52,7 @@ const Modal = ({
 							<h3 className='uppercase text-white text-3xl text-center'>
 								{title}
 							</h3>
-							<button>
+							<button className='p1 ml-auto border-0 text-white hover:opacity-70 transition'>
 								<AiOutlineClose size={20} />
 							</button>
 						</div>
