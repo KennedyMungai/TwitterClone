@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import './globals.css'
 import Modal from '@/components/Modal'
+import ReduxProvider from '@/Redux/ReduxProvider'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 
@@ -16,8 +17,10 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang='en'>
-			<body className={open_sans.className}>{children}</body>
-		</html>
+		<ReduxProvider>
+			<html lang='en'>
+				<body className={open_sans.className}>{children}</body>
+			</html>
+		</ReduxProvider>
 	)
 }
